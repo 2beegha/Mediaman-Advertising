@@ -4,153 +4,230 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Integrated Advertising & Outdoor Media Agency in Karnal | Mediaman Advertising</title>
+<title>Mediaman Advertising | Outdoor & Billboard Advertising Agency in Karnal</title>
 
-<meta name="description" content="Mediaman Advertising is a full-service advertising and outdoor media agency in Karnal, Haryana offering billboard, hoarding, media planning, branding and government tender advertising services.">
-
-<meta name="keywords" content="
-Advertising Agency in Karnal,
-Outdoor Advertising in Karnal,
-Billboard Advertising Agency,
-Hoarding Advertising Haryana,
-Media Planning Agency,
-Government Advertising Agency
-">
-
+<meta name="description" content="Mediaman Advertising is a leading outdoor, billboard and media planning advertising agency in Karnal, Haryana serving Panipat, Kurukshetra and nearby areas.">
+<meta name="keywords" content="Advertising Agency in Karnal, Outdoor Advertising Karnal, Billboard Advertising, Hoarding Agency Haryana, Media Planning Agency">
 <meta name="robots" content="index, follow">
 
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.6}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.7}
 a{text-decoration:none;color:inherit}
-header{background:#0b1c3f;color:#fff;padding:80px 20px;text-align:center}
-header h1{font-size:40px;margin-bottom:10px}
-header p{font-size:18px;max-width:900px;margin:auto}
-.btn{display:inline-block;background:#ffb703;color:#000;padding:14px 30px;border-radius:30px;font-weight:700;margin-top:25px}
 
-nav{background:#020617;padding:14px;text-align:center;position:sticky;top:0}
-nav a{color:#fff;margin:0 15px;font-weight:600}
+/* SLIDER */
+.slider{position:relative;height:90vh;overflow:hidden}
+.slide{
+  position:absolute;
+  width:100%;height:100%;
+  background-size:cover;
+  background-position:center;
+  opacity:0;
+  transition:opacity 1s ease-in-out;
+}
+.slide.active{opacity:1}
+.overlay{
+  background:rgba(0,0,0,0.55);
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
+}
+.overlay h1{font-size:42px;margin-bottom:15px}
+.overlay p{font-size:18px;max-width:850px;margin:auto}
 
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 32px;
+  background:#ffb703;
+  color:#000;
+  font-weight:700;
+  border-radius:30px;
+}
+
+/* NAV */
+nav{
+  background:#020617;
+  padding:14px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+nav a{
+  color:#fff;
+  margin:0 15px;
+  font-weight:600;
+}
+
+/* SECTIONS */
 section{padding:80px 20px;max-width:1200px;margin:auto}
 .section-title{text-align:center;margin-bottom:50px}
-.section-title h2{font-size:32px}
+.section-title h2{font-size:32px;color:#0a58ca}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
 
-.card{background:#f8fafc;padding:35px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.card{
+  background:#f8fafc;
+  padding:35px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
 
 .dark{background:#0b1c3f;color:#fff}
 
-footer{background:#020617;color:#cbd5f5;text-align:center;padding:30px}
+.stats{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  gap:25px;
+}
+.stat{
+  background:#eef4fb;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  width:180px;
+}
+
+footer{
+  background:#020617;
+  color:#cbd5f5;
+  text-align:center;
+  padding:30px;
+}
+
+/* WhatsApp */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 18px;
+  border-radius:50%;
+  font-size:22px;
+}
+
+@media(max-width:768px){
+  .overlay h1{font-size:30px}
+}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<header>
-  <h1>Integrated Advertising & Media Solutions</h1>
-  <p>
-    Mediaman Advertising is a professional outdoor and integrated advertising agency
-    delivering high-impact campaigns across Karnal, Panipat, Kurukshetra and Haryana.
-  </p>
-  <a href="#contact" class="btn">Get in Touch</a>
-</header>
+<!-- HERO SLIDER -->
+<div class="slider">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+    <div class="overlay">
+      <div>
+        <h1>Outdoor & Billboard Advertising</h1>
+        <p>High-impact outdoor campaigns across Karnal, Panipat & Haryana</p>
+        <a href="#contact" class="btn">Get Quote</a>
+      </div>
+    </div>
+  </div>
 
-<!-- NAV -->
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');">
+    <div class="overlay">
+      <div>
+        <h1>Media Planning & Buying</h1>
+        <p>Strategic media solutions for brands and government departments</p>
+        <a href="#services" class="btn">Our Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');">
+    <div class="overlay">
+      <div>
+        <h1>Integrated Advertising Solutions</h1>
+        <p>From planning to execution – we deliver visibility & results</p>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#clients">Expertise</a>
+  <a href="#stats">Achievements</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-title">
     <h2>About Mediaman Advertising</h2>
   </div>
   <p>
-    Mediaman Advertising is a Karnal-based advertising and outdoor media agency providing
-    strategic advertising solutions to brands, institutions and government departments.
-    Our expertise spans outdoor advertising, billboard and hoarding campaigns, media
-    planning, branding and communication strategy across Haryana and North India.
+    Mediaman Advertising is a professional outdoor and integrated advertising agency
+    based in Karnal, Haryana. We specialize in billboard advertising, hoardings,
+    media planning and campaign execution for brands, institutions and government
+    departments across Haryana and nearby regions.
   </p>
 </section>
 
-<!-- SERVICES -->
 <section id="services" class="dark">
   <div class="section-title">
     <h2>Our Services</h2>
   </div>
-
   <div class="grid">
-    <div class="card">
-      <h3>Outdoor Advertising</h3>
-      <p>High-visibility outdoor media campaigns across prime locations.</p>
-    </div>
-
-    <div class="card">
-      <h3>Billboard & Hoardings</h3>
-      <p>Strategic billboard and hoarding placements for maximum brand recall.</p>
-    </div>
-
-    <div class="card">
-      <h3>Media Planning & Buying</h3>
-      <p>Data-driven planning to maximize ROI for advertising investments.</p>
-    </div>
-
-    <div class="card">
-      <h3>Government Tender Advertising</h3>
-      <p>Authorized advertising services for government and PSU tenders.</p>
-    </div>
+    <div class="card"><h3>Outdoor Advertising</h3><p>Prime outdoor locations with maximum reach.</p></div>
+    <div class="card"><h3>Billboard & Hoardings</h3><p>Large-format visibility at high-traffic zones.</p></div>
+    <div class="card"><h3>Transit Advertising</h3><p>Bus, auto & mobile branding solutions.</p></div>
+    <div class="card"><h3>Media Planning</h3><p>ROI-focused planning & buying strategies.</p></div>
   </div>
 </section>
 
-<!-- EXPERTISE -->
-<section id="clients">
+<section id="stats">
   <div class="section-title">
-    <h2>Why Choose Us</h2>
+    <h2>Our Achievements</h2>
   </div>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Regional Strength</h3>
-      <p>Strong presence in Karnal, Panipat, Kurukshetra & surrounding regions.</p>
-    </div>
-
-    <div class="card">
-      <h3>Execution Excellence</h3>
-      <p>From planning to execution, we deliver measurable results.</p>
-    </div>
-
-    <div class="card">
-      <h3>Trusted Partner</h3>
-      <p>Preferred agency for brands and government bodies.</p>
-    </div>
+  <div class="stats">
+    <div class="stat"><h3>15+</h3><p>Years Experience</p></div>
+    <div class="stat"><h3>500+</h3><p>Clients Served</p></div>
+    <div class="stat"><h3>2000+</h3><p>Campaigns</p></div>
+    <div class="stat"><h3>Govt</h3><p>Tender Approved</p></div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="dark">
+<section id="contact">
   <div class="section-title">
     <h2>Contact Us</h2>
   </div>
+  <p><strong>Phone:</strong> <a href="tel:+919729606097">+91 97296 06097</a></p>
+  <p><strong>Email:</strong> pardeep@mediaman.in</p>
+  <p><strong>Address:</strong> SCO 93, 3rd Floor, Sector, Karnal, Haryana – 132001</p>
 
-  <p>
-    📞 <strong>+91 97296 06097</strong><br>
-    📧 pardeep@mediaman.in<br>
-    📍 SCO 93, 3rd Floor, Sector, Karnal, Haryana – 132001
-  </p>
-
-  <iframe
-    src="https://www.google.com/maps?q=SCO%2093%203rd%20Floor%20Sector%20Karnal%20Haryana&output=embed"
-    style="width:100%;height:320px;border:0;border-radius:12px;margin-top:30px">
+  <iframe src="https://www.google.com/maps?q=SCO%2093%203rd%20Floor%20Sector%20Karnal%20Haryana&output=embed"
+    style="width:100%;height:320px;border:0;border-radius:12px;margin-top:20px">
   </iframe>
 </section>
 
 <footer>
-  © 2025 Mediaman Advertising | Integrated Advertising & Outdoor Media Agency
+  © 2025 Mediaman Advertising | Outdoor & Billboard Advertising Agency in Karnal
 </footer>
+
+<a href="https://wa.me/919729606097" class="whatsapp">💬</a>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let index=0;
+setInterval(()=>{
+  slides[index].classList.remove("active");
+  index=(index+1)%slides.length;
+  slides[index].classList.add("active");
+},4000);
+</script>
 
 </body>
 </html>
