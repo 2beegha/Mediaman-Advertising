@@ -164,40 +164,134 @@ footer{
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-  <div class="section-title">
+<!-- ABOUT + SERVICES SECTION -->
+<style>
+/* ABOUT SECTION */
+.about-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 34px;
+  color: #0a58ca;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #334155;
+  line-height: 1.8;
+}
+
+/* SERVICES SECTION */
+.services-section {
+  background: linear-gradient(135deg, #020617, #0b1c3f);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  color: #3b82f6;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+/* SERVICE GRID */
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+/* SERVICE CARD */
+.service-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: all 0.35s ease;
+}
+
+.service-card h3 {
+  color: #0a58ca;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-section h2,
+  .services-section h2 {
+    font-size: 28px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+}
+</style>
+
+<section id="about-services">
+
+  <!-- ABOUT -->
+  <div class="about-section">
     <h2>About Mediaman Advertising</h2>
+    <p>
+      Mediaman Advertising is a professional outdoor and integrated advertising agency
+      based in Karnal, Haryana. We specialize in billboard advertising, hoardings,
+      media planning and campaign execution for brands, institutions and government
+      departments across Haryana and nearby regions.
+    </p>
   </div>
-  <p>
-    Mediaman Advertising is a professional outdoor and integrated advertising agency
-    based in Karnal, Haryana. We specialize in billboard advertising, hoardings,
-    media planning and campaign execution for brands, institutions and government
-    departments across Haryana and nearby regions.
-  </p>
-</section>
 
-<section id="services" class="dark">
-  <div class="section-title">
+  <!-- SERVICES -->
+  <div class="services-section">
     <h2>Our Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Outdoor Advertising</h3>
+        <p>Prime outdoor locations with maximum reach and high visibility.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Billboard & Hoardings</h3>
+        <p>Large-format branding at high-traffic and strategic locations.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Transit Advertising</h3>
+        <p>Bus, auto and mobile branding solutions across cities.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Media Planning</h3>
+        <p>ROI-focused planning and professional media buying strategies.</p>
+      </div>
+    </div>
   </div>
-  <div class="grid">
-    <div class="card"><h3>Outdoor Advertising</h3><p>Prime outdoor locations with maximum reach.</p></div>
-    <div class="card"><h3>Billboard & Hoardings</h3><p>Large-format visibility at high-traffic zones.</p></div>
-    <div class="card"><h3>Transit Advertising</h3><p>Bus, auto & mobile branding solutions.</p></div>
-    <div class="card"><h3>Media Planning</h3><p>ROI-focused planning & buying strategies.</p></div>
-  </div>
+
 </section>
 
-<section id="stats">
-  <div class="section-title">
-    <h2>Our Achievements</h2>
-  </div>
-  <div class="stats">
-    <div class="stat"><h3>15+</h3><p>Years Experience</p></div>
-    <div class="stat"><h3>500+</h3><p>Clients Served</p></div>
-    <div class="stat"><h3>2000+</h3><p>Campaigns</p></div>
-    <div class="stat"><h3>Govt</h3><p>Tender Approved</p></div>
-  </div>
 </section>
 
 <section id="contact">
